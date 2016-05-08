@@ -2,15 +2,48 @@ box: debian
 
 build:
   steps:
+    #- install-packages:
+    #    packages: wget
+    #
+    #- script:
+    #    name: Getting Hugo
+    #    code: |-
+    #      HUGO_VERSION=hugo_0.15_linux_amd64
+    #      mkdir bin
+    #      wget https://github.com/spf13/hugo/releases/download/v0.15/${HUGO_VERSION}.tar.gz
+    #      tar xzvf ${HUGO_VERSION}.tar.gz -C bin --strip-components 1
+    #      ln -s ./bin/${HUGO_VERSION} ./bin/hugo
+    #      ./bin/hugo version
+    #
+    #- script:
+    #    name: Build Site
+    #    code: make build HUGO=./bin/hugo
+
     - arjen/hugo-build:
-        version: "0.14"
-        theme: herring-cove
-        flags: --buildDrafts=true
+        version: "0.15"
+        theme: hugo-material-docs
+        config: config.toml
+        #flags: --buildDrafts=false
 
 deploy:
   steps:
     - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GITHUB_TOKEN
-        basedir: public
+        packages: git ssh-client build-essential
+
+    - add-ssh-key:
+        keyname: GITHUB_KEY
+
+    - add-to-known_hosts:
+        hostname: github.com
+        # https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/
+        fingerrint:  16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+
+    - script:
+        name: Configure git
+        code: |-
+          git config user.email "pleasemailus@wercker.com"
+          git config user.nmae "werckerbot"
+
+    - script:
+        name: Deploy it
+        code: make deploy CURRENT_BRANCH=$WERCKER_GIT_BRANCH

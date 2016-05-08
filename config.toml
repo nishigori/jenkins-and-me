@@ -1,5 +1,5 @@
 title = "Jenkins and Me"
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://atsumori.de/jenkins-and-me/"
 languageCode = "ja-jp"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
