@@ -1,0 +1,77 @@
+title = "Jenkins and Me"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "ja-jp"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+paginate = 20
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+#[permalinks]
+#    # Optional. Change the permalink format for the 'post' content type.
+#    # The format shown here is the same one Jekyll/Octopress uses by default.
+#    post = "/blog/:year/:month/:day/:title/"
+
+[taxonomies]
+	category = "jenkins,learning,tips"
+		tag = "tags"
+
+[params]
+	# General information
+	author = "nishigori"
+	description = "My Getting Started Jenkins CI"
+	copyright = "All Rights Reserved."
+
+	# If false display full article contents in blog index.
+	# Otherwise show description and 'read on' link to individual blog post page.
+	# Default (if omitted) is true.
+	truncate = true
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/nishigori/jenkins-and-me"
+
+	version = ""
+	logo = "/img/master-jenkins-normal3.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+		primary = "light red"
+		accent  = "light green"
+
+	[params.font]
+		text = "Ubuntu"
+		code = "Ubuntu Mono"
+
+
+[social]
+	twitter = "_nishigori"
+	github  = "nishigori"
+
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Pipeline"
+	url    = "pipeline/"
+	weight = 10
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
