@@ -34,5 +34,5 @@ deploy: ## Deploy to site
 	git add -f public
 	git commit -m "site generation"
 	#git push $(GIT_REMOTE) $$(git subtree split --prefix public/ $(GIT_REMOTE)):$(DEPLOY_BRANCH) --force
-	git push $(GIT_REMOTE) :$(DEPLOY_BRANCH)
+	-git push $(GIT_REMOTE) :$(DEPLOY_BRANCH)
 	git subtree push --prefix public $(GIT_REMOTE) $(DEPLOY_BRANCH)
