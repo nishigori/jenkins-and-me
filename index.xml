@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins and Me</title>
+    <link>http://atsumori.de/jenkins-and-me/</link>
+    <description>Recent content on Jenkins and Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 09 May 2016 10:48:10 +0900</lastBuildDate>
+    <atom:link href="http://atsumori.de/jenkins-and-me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>index</title>
+      <link>http://atsumori.de/jenkins-and-me/</link>
+      <pubDate>Mon, 09 May 2016 10:48:10 +0900</pubDate>
+      
+      <guid>http://atsumori.de/jenkins-and-me/</guid>
+      <description>
+
+&lt;h2 id=&#34;official-links&#34;&gt;Official Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jenkins - &lt;a href=&#34;https://jenkins.io/&#34;&gt;https://jenkins.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jenkins JIRA - &lt;a href=&#34;https://issues.jenkins-ci.org/secure/Dashboard.jspa&#34;&gt;https://issues.jenkins-ci.org/secure/Dashboard.jspa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pipline</title>
+      <link>http://atsumori.de/jenkins-and-me/pipeline/</link>
+      <pubDate>Sun, 08 May 2016 14:28:08 +0900</pubDate>
+      
+      <guid>http://atsumori.de/jenkins-and-me/pipeline/</guid>
+      <description>
+
+&lt;h1 id=&#34;pipeline-as-the-code&#34;&gt;Pipeline as the Code&lt;/h1&gt;
+
+&lt;h2 id=&#34;official-links&#34;&gt;Official Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jenkins.io/doc/pipeline/&#34;&gt;https://jenkins.io/doc/pipeline/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jenkinsci/pipeline-plugin/blob/master/TUTORIAL.md&#34;&gt;https://github.com/jenkinsci/pipeline-plugin/blob/master/TUTORIAL.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jenkinsci/pipeline-examples/tree/master/pipeline-examples&#34;&gt;https://github.com/jenkinsci/pipeline-examples/tree/master/pipeline-examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jenkinsci/pipeline-plugin/blob/master/COMPATIBILITY.md&#34;&gt;https://github.com/jenkinsci/pipeline-plugin/blob/master/COMPATIBILITY.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.cloudbees.com/docs/cookbook/pipeline-as-code.html&#34;&gt;https://documentation.cloudbees.com/docs/cookbook/pipeline-as-code.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.jenkins-ci.org/display/JENKINS/2.0+Pipeline+as+Code&#34;&gt;https://wiki.jenkins-ci.org/display/JENKINS/2.0+Pipeline+as+Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.cloudbees.com/docs/cookbook/_setting_up_a_basic_build_pipeline_with_jenkins.html&#34;&gt;https://documentation.cloudbees.com/docs/cookbook/_setting_up_a_basic_build_pipeline_with_jenkins.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/tags/jenkins-pipeline/hot?filter=year&#34;&gt;http://stackoverflow.com/tags/jenkins-pipeline/hot?filter=year&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jenkinsci/workflow-cps-global-lib-plugin/blob/master/README.md&#34;&gt;https://github.com/jenkinsci/workflow-cps-global-lib-plugin/blob/master/README.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;faq&#34;&gt;FAQ&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;nodeブロックの外でもGroovy Scriptをloadしたい&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;まだ本家が対応できていない&lt;/p&gt;
+
+&lt;p&gt;ref: &lt;a href=&#34;https://issues.jenkins-ci.org/browse/JENKINS-32400&#34;&gt;https://issues.jenkins-ci.org/browse/JENKINS-32400&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Jenkinsfile(pipeline code)をテストしたい&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://issues.jenkins-ci.org/browse/JENKINS-33925&#34;&gt;https://issues.jenkins-ci.org/browse/JENKINS-33925&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Travis CIみたいに各BranchのJenkinsfileを見てビルドしたい&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jenkinsci/pipeline-plugin/blob/master/TUTORIAL.md#creating-multibranch-projects&#34;&gt;https://github.com/jenkinsci/pipeline-plugin/blob/master/TUTORIAL.md#creating-multibranch-projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
