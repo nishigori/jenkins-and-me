@@ -2,23 +2,6 @@ box: debian
 
 build:
   steps:
-    #- install-packages:
-    #    packages: wget
-    #
-    #- script:
-    #    name: Getting Hugo
-    #    code: |-
-    #      HUGO_VERSION=hugo_0.15_linux_amd64
-    #      mkdir bin
-    #      wget https://github.com/spf13/hugo/releases/download/v0.15/${HUGO_VERSION}.tar.gz
-    #      tar xzvf ${HUGO_VERSION}.tar.gz -C bin --strip-components 1
-    #      ln -s ./bin/${HUGO_VERSION} ./bin/hugo
-    #      ./bin/hugo version
-    #
-    #- script:
-    #    name: Build Site
-    #    code: make build HUGO=./bin/hugo
-
     - arjen/hugo-build:
         version: "0.15"
         theme: hugo-material-docs
